@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cyphysan/Desktop/noobNet/mnist/include/mnist/mnist_reader.hpp
+fstream
+-
+iostream
+-
+string
+-
+vector
+-
+cstdint
+-
+memory
+-
+mnist_reader_common.hpp
+/home/cyphysan/Desktop/noobNet/mnist/include/mnist/mnist_reader_common.hpp
+
+/home/cyphysan/Desktop/noobNet/mnist/include/mnist/mnist_reader_common.hpp
+
+/home/cyphysan/Desktop/noobNet/mnist/include/mnist/mnist_utils.hpp
+cmath
+-
+
+/home/cyphysan/Desktop/noobNet/noobNet.cpp
+iostream
+-
+vector
+-
+Eigen/Dense
+-
+mnist/include/mnist/mnist_reader.hpp
+/home/cyphysan/Desktop/noobNet/mnist/include/mnist/mnist_reader.hpp
+mnist/include/mnist/mnist_utils.hpp
+/home/cyphysan/Desktop/noobNet/mnist/include/mnist/mnist_utils.hpp
+

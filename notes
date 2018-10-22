@@ -1,0 +1,49 @@
+Store objects of different classes in vector[done]
+Implement fully_connected feed-forward neural network
+Load MNIST
+Implement gradient descent
+Implement backprop on a simple neural network
+Add a conv layer
+
+Layers checklist:
+(*) Fully connected
+(*) Conv layer
+(*) Pooling
+(*) Normalization
+
+7th October 2018:
+  Fixed:
+  The problem with adding objects of different classes in a layer is fixed.
+    1. I derived all the classes from a common base class
+    2. Instead of stroing them as vector of Layer(the base class) datatype, I store everything as
+       a vector of Layer pointers now.
+    3. For calling the forward routine of all the derived classes (the different layer classes), instead of the pointer
+      looking for the function in the base class, I used a virtual datatype before the functions.
+    4. So now, I'm able to store the layers as vector elements- as pointer under a common datatype Layer* and access the
+       forward_routine function of all the derived classes.
+    5. Next: Implement forward propagation.
+    Unresolved:
+
+16th October 2018:
+  Goals:
+    1. Add 2 layers, define weights and inputs and get an output using only fully connected layers. (X)
+    2. Implement back propagation (X)
+
+  For later:
+    Only the inputs to each layer are messed with in the forward_over_layers loop, not the weights
+  Fixed:
+    Function with type Eigen::MatrixXd (partially)
+  Unresolved: Unable to handle MatrixXd elements by calling a function. Possible- memory alloc issues, pointer invalidity issues
+
+17th October:
+  Goals:
+    Resolve yesterday's unsolved probs. (DONE)
+    Implement a fully_connected layer with working forward (DONE) and backward prop.
+
+    Update: Problem with generalizing matrix multiplication for all layers- dimensions.
+
+21st October:
+  Load mnist, store in matrices
+  gradient computations
+  backprop
+  train/fit
