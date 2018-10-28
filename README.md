@@ -4,6 +4,6 @@ An elementary Deep Learning framework built on C++, maintained for learning purp
 Currently supports dense layers with softmax, relu and sigmoid activations.
 
 To Do:
-Convolution layers
-Max Pool layers
-Adam and GD with momentum optimizations
+Convolution layers.
+Max Pool layers.
+Adam and GD with momentum optimizations.
