@@ -335,9 +335,9 @@ int main()
 	fc_layer 		l1(50, 10);
  	activation  l2(10,"softmax");
 
-  neuralNet.add_layer(&l0);
+ 	neuralNet.add_layer(&l0);
 	neuralNet.add_layer(&l1);
-  neuralNet.add_layer(&l2);
+        neuralNet.add_layer(&l2);
 
 	neuralNet.setParams(step_size, reg);
 	std::cout<<"Training..."<<endl;
