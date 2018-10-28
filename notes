@@ -47,3 +47,13 @@ Layers checklist:
   gradient computations
   backprop
   train/fit
+
+24th October 2018
+  1. Vectorise labels (DONE)
+  2. Get CE_loss working
+  3. Gradient computation
+  4. back_prop
+  5. Training
+
+predictions is a 1x10 vect with probabilities. Instead, make it into a 1x10 vect with highest probability
+as 1 and the rest as 0?

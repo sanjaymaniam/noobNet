@@ -2,20 +2,12 @@
 #include <string>
 #include <Eigen/Dense>
 
-using namespace Eigen;
 using namespace std;
-
-class a{
-  MatrixXd alpha = MatrixXd::Random(1,4);
-public:
-  a(){
-    std::cout<<alpha;
-  }
-};
 
 int main()
 {
-  // Eigen::MatrixXd a(2,3), b(1,3);
-  // std::cout<<MatrixXd::Random(1,4);
-  a a1;
+Eigen::MatrixXd a = Eigen::MatrixXd::Random(3,1);
+a=(a+1)/2*60000;
+Eigen::MatrixXi f = a.cast <int> ();   // Matrix of floats.}
+std::cout<<f;
 }
